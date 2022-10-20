@@ -1,7 +1,5 @@
 #include <netinet/in.h>
 
-#include "socket.h"
-
 int __createSocket(int port, struct sockaddr_in *serverAddress, int *server_fd) {
     int opt = 1;
     

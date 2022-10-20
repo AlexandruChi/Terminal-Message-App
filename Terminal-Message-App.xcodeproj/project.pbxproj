@@ -11,6 +11,7 @@
 		F5B40DD62901E514008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD52901E514008A6872 /* main.cpp */; };
 		F5B40DD92901E677008A6872 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD72901E677008A6872 /* server.cpp */; };
 		F5B40DDD2901EA07008A6872 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DDC2901EA07008A6872 /* socket.c */; };
+		F5B40DE12901F901008A6872 /* acceptConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE02901F901008A6872 /* acceptConnection.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		F5B40DD82901E677008A6872 /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = "Terminal-Message-App/server.hpp"; sourceTree = SOURCE_ROOT; };
 		F5B40DDB2901EA07008A6872 /* socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 		F5B40DDC2901EA07008A6872 /* socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
+		F5B40DDF2901F901008A6872 /* acceptConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceptConnection.h; sourceTree = "<group>"; };
+		F5B40DE02901F901008A6872 /* acceptConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = acceptConnection.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 		F5B40DAA2901E1E5008A6872 = {
 			isa = PBXGroup;
 			children = (
+				F5B40DE42901FBA8008A6872 /* threds */,
+				F5B40DDE2901F87B008A6872 /* connections */,
 				F5B40DDA2901E9F2008A6872 /* socket */,
 				F5B40DBE2901E273008A6872 /* server */,
 				F5B40DCF2901E4FC008A6872 /* client */,
@@ -107,6 +112,22 @@
 				F5B40DDC2901EA07008A6872 /* socket.c */,
 			);
 			path = socket;
+			sourceTree = "<group>";
+		};
+		F5B40DDE2901F87B008A6872 /* connections */ = {
+			isa = PBXGroup;
+			children = (
+				F5B40DDF2901F901008A6872 /* acceptConnection.h */,
+				F5B40DE02901F901008A6872 /* acceptConnection.c */,
+			);
+			path = connections;
+			sourceTree = "<group>";
+		};
+		F5B40DE42901FBA8008A6872 /* threds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = threds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +211,7 @@
 				F5B40DD92901E677008A6872 /* server.cpp in Sources */,
 				F5B40DD62901E514008A6872 /* main.cpp in Sources */,
 				F5B40DDD2901EA07008A6872 /* socket.c in Sources */,
+				F5B40DE12901F901008A6872 /* acceptConnection.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
