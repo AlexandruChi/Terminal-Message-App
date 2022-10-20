@@ -1,6 +1,4 @@
 #include <netinet/in.h>
-#include <unistd.h>
-#include <sys/socket.h>
 
 #include "server.hpp"
 
