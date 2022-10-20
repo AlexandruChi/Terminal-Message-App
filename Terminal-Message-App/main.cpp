@@ -1,14 +1,20 @@
-//
-//  main.cpp
-//  Terminal-Message-App
-//
-//  Created by Александру Кирияк on 20.10.2022.
-//
-
 #include <iostream>
 
+#include <netinet/in.h>
+#include <unistd.h>
+#include <sys/socket.h>
+
+#include "server.hpp"
+
+#define DEFAULT_PORT 4092
+
+using namespace std;
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Server server;
+    
+    server.port = DEFAULT_PORT;
+    server.createSocket();
+    
     return 0;
 }

@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5B40DB72901E1E5008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DB62901E1E5008A6872 /* main.cpp */; };
+		F5B40DD12901E4FC008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD02901E4FC008A6872 /* main.cpp */; };
+		F5B40DD62901E514008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD52901E514008A6872 /* main.cpp */; };
+		F5B40DD92901E677008A6872 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD72901E677008A6872 /* server.cpp */; };
+		F5B40DDD2901EA07008A6872 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DDC2901EA07008A6872 /* socket.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F5B40DB12901E1E5008A6872 /* CopyFiles */ = {
+		F5B40DC12901E4C4008A6872 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F5B40DCC2901E4FC008A6872 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +35,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F5B40DB32901E1E5008A6872 /* Terminal-Message-App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Terminal-Message-App"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5B40DB62901E1E5008A6872 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F5B40DC32901E4C4008A6872 /* server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = server; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B40DCE2901E4FC008A6872 /* client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = client; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B40DD02901E4FC008A6872 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F5B40DD52901E514008A6872 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Terminal-Message-App/main.cpp"; sourceTree = SOURCE_ROOT; };
+		F5B40DD72901E677008A6872 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = server.cpp; path = "Terminal-Message-App/server.cpp"; sourceTree = SOURCE_ROOT; };
+		F5B40DD82901E677008A6872 /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = "Terminal-Message-App/server.hpp"; sourceTree = SOURCE_ROOT; };
+		F5B40DDB2901EA07008A6872 /* socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		F5B40DDC2901EA07008A6872 /* socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F5B40DB02901E1E5008A6872 /* Frameworks */ = {
+		F5B40DC02901E4C4008A6872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B40DCB2901E4FC008A6872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +66,9 @@
 		F5B40DAA2901E1E5008A6872 = {
 			isa = PBXGroup;
 			children = (
-				F5B40DB52901E1E5008A6872 /* Terminal-Message-App */,
+				F5B40DDA2901E9F2008A6872 /* socket */,
+				F5B40DBE2901E273008A6872 /* server */,
+				F5B40DCF2901E4FC008A6872 /* client */,
 				F5B40DB42901E1E5008A6872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +76,74 @@
 		F5B40DB42901E1E5008A6872 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5B40DB32901E1E5008A6872 /* Terminal-Message-App */,
+				F5B40DC32901E4C4008A6872 /* server */,
+				F5B40DCE2901E4FC008A6872 /* client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F5B40DB52901E1E5008A6872 /* Terminal-Message-App */ = {
+		F5B40DBE2901E273008A6872 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				F5B40DB62901E1E5008A6872 /* main.cpp */,
+				F5B40DD52901E514008A6872 /* main.cpp */,
+				F5B40DD72901E677008A6872 /* server.cpp */,
+				F5B40DD82901E677008A6872 /* server.hpp */,
 			);
-			path = "Terminal-Message-App";
+			path = server;
+			sourceTree = "<group>";
+		};
+		F5B40DCF2901E4FC008A6872 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				F5B40DD02901E4FC008A6872 /* main.cpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		F5B40DDA2901E9F2008A6872 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				F5B40DDB2901EA07008A6872 /* socket.h */,
+				F5B40DDC2901EA07008A6872 /* socket.c */,
+			);
+			path = socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F5B40DB22901E1E5008A6872 /* Terminal-Message-App */ = {
+		F5B40DC22901E4C4008A6872 /* server */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5B40DBA2901E1E5008A6872 /* Build configuration list for PBXNativeTarget "Terminal-Message-App" */;
+			buildConfigurationList = F5B40DC72901E4C4008A6872 /* Build configuration list for PBXNativeTarget "server" */;
 			buildPhases = (
-				F5B40DAF2901E1E5008A6872 /* Sources */,
-				F5B40DB02901E1E5008A6872 /* Frameworks */,
-				F5B40DB12901E1E5008A6872 /* CopyFiles */,
+				F5B40DBF2901E4C4008A6872 /* Sources */,
+				F5B40DC02901E4C4008A6872 /* Frameworks */,
+				F5B40DC12901E4C4008A6872 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Terminal-Message-App";
-			productName = "Terminal-Message-App";
-			productReference = F5B40DB32901E1E5008A6872 /* Terminal-Message-App */;
+			name = server;
+			productName = server;
+			productReference = F5B40DC32901E4C4008A6872 /* server */;
+			productType = "com.apple.product-type.tool";
+		};
+		F5B40DCD2901E4FC008A6872 /* client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B40DD22901E4FC008A6872 /* Build configuration list for PBXNativeTarget "client" */;
+			buildPhases = (
+				F5B40DCA2901E4FC008A6872 /* Sources */,
+				F5B40DCB2901E4FC008A6872 /* Frameworks */,
+				F5B40DCC2901E4FC008A6872 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = client;
+			productName = client;
+			productReference = F5B40DCE2901E4FC008A6872 /* client */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +155,10 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					F5B40DB22901E1E5008A6872 = {
+					F5B40DC22901E4C4008A6872 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F5B40DCD2901E4FC008A6872 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -109,17 +176,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5B40DB22901E1E5008A6872 /* Terminal-Message-App */,
+				F5B40DC22901E4C4008A6872 /* server */,
+				F5B40DCD2901E4FC008A6872 /* client */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F5B40DAF2901E1E5008A6872 /* Sources */ = {
+		F5B40DBF2901E4C4008A6872 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B40DB72901E1E5008A6872 /* main.cpp in Sources */,
+				F5B40DD92901E677008A6872 /* server.cpp in Sources */,
+				F5B40DD62901E514008A6872 /* main.cpp in Sources */,
+				F5B40DDD2901EA07008A6872 /* socket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B40DCA2901E4FC008A6872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B40DD12901E4FC008A6872 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +313,7 @@
 			};
 			name = Release;
 		};
-		F5B40DBB2901E1E5008A6872 /* Debug */ = {
+		F5B40DC82901E4C4008A6872 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +321,23 @@
 			};
 			name = Debug;
 		};
-		F5B40DBC2901E1E5008A6872 /* Release */ = {
+		F5B40DC92901E4C4008A6872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5B40DD32901E4FC008A6872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5B40DD42901E4FC008A6872 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -263,11 +357,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5B40DBA2901E1E5008A6872 /* Build configuration list for PBXNativeTarget "Terminal-Message-App" */ = {
+		F5B40DC72901E4C4008A6872 /* Build configuration list for PBXNativeTarget "server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F5B40DBB2901E1E5008A6872 /* Debug */,
-				F5B40DBC2901E1E5008A6872 /* Release */,
+				F5B40DC82901E4C4008A6872 /* Debug */,
+				F5B40DC92901E4C4008A6872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B40DD22901E4FC008A6872 /* Build configuration list for PBXNativeTarget "client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B40DD32901E4FC008A6872 /* Debug */,
+				F5B40DD42901E4FC008A6872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
