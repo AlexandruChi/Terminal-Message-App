@@ -1,11 +1,8 @@
-//
-//  main.cpp
-//  client
-//
-//  Created by Александру Кирияк on 20.10.2022.
-//
-
 #include <iostream>
+
+#define DEFAULT_PORT 4092
+
+// Client
 
 int main(int argc, const char * argv[]) {
     // insert code here...

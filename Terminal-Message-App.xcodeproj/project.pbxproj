@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F5B40DD12901E4FC008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD02901E4FC008A6872 /* main.cpp */; };
-		F5B40DD62901E514008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD52901E514008A6872 /* main.cpp */; };
-		F5B40DD92901E677008A6872 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DD72901E677008A6872 /* server.cpp */; };
 		F5B40DDD2901EA07008A6872 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DDC2901EA07008A6872 /* socket.c */; };
 		F5B40DE12901F901008A6872 /* acceptConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE02901F901008A6872 /* acceptConnection.c */; };
+		F5B40DEA2902A5FA008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE72902A5FA008A6872 /* main.cpp */; };
+		F5B40DEB2902A5FA008A6872 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE92902A5FA008A6872 /* server.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,13 +39,13 @@
 		F5B40DC32901E4C4008A6872 /* server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = server; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B40DCE2901E4FC008A6872 /* client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = client; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B40DD02901E4FC008A6872 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		F5B40DD52901E514008A6872 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Terminal-Message-App/main.cpp"; sourceTree = SOURCE_ROOT; };
-		F5B40DD72901E677008A6872 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = server.cpp; path = "Terminal-Message-App/server.cpp"; sourceTree = SOURCE_ROOT; };
-		F5B40DD82901E677008A6872 /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = "Terminal-Message-App/server.hpp"; sourceTree = SOURCE_ROOT; };
 		F5B40DDB2901EA07008A6872 /* socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 		F5B40DDC2901EA07008A6872 /* socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
 		F5B40DDF2901F901008A6872 /* acceptConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceptConnection.h; sourceTree = "<group>"; };
 		F5B40DE02901F901008A6872 /* acceptConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = acceptConnection.c; sourceTree = "<group>"; };
+		F5B40DE72902A5FA008A6872 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F5B40DE82902A5FA008A6872 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
+		F5B40DE92902A5FA008A6872 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +90,9 @@
 		F5B40DBE2901E273008A6872 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				F5B40DD52901E514008A6872 /* main.cpp */,
-				F5B40DD72901E677008A6872 /* server.cpp */,
-				F5B40DD82901E677008A6872 /* server.hpp */,
+				F5B40DE72902A5FA008A6872 /* main.cpp */,
+				F5B40DE92902A5FA008A6872 /* server.cpp */,
+				F5B40DE82902A5FA008A6872 /* server.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -208,10 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B40DD92901E677008A6872 /* server.cpp in Sources */,
-				F5B40DD62901E514008A6872 /* main.cpp in Sources */,
 				F5B40DDD2901EA07008A6872 /* socket.c in Sources */,
 				F5B40DE12901F901008A6872 /* acceptConnection.c in Sources */,
+				F5B40DEB2902A5FA008A6872 /* server.cpp in Sources */,
+				F5B40DEA2902A5FA008A6872 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
