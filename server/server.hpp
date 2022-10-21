@@ -11,6 +11,7 @@ struct Server {
     struct sockaddr_in clientAddress;
     
     int createSocket();
+    int acceptConnection(int *client_fd, sockaddr *clientAddress);
 };
 
 #endif /* server_hpp */
