@@ -13,6 +13,8 @@
 		F5B40DEA2902A5FA008A6872 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE72902A5FA008A6872 /* main.cpp */; };
 		F5B40DEB2902A5FA008A6872 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DE92902A5FA008A6872 /* server.cpp */; };
 		F5B40DEE2902A69C008A6872 /* userThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DEC2902A69C008A6872 /* userThread.cpp */; };
+		F5B40DF72902C048008A6872 /* convThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B40DF52902C048008A6872 /* convThread.cpp */; };
+		F5C215482902DF8100341588 /* mesgThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5C215462902DF8100341588 /* mesgThread.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +50,11 @@
 		F5B40DE82902A5FA008A6872 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
 		F5B40DE92902A5FA008A6872 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
 		F5B40DEC2902A69C008A6872 /* userThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = userThread.cpp; sourceTree = "<group>"; };
-		F5B40DED2902A69C008A6872 /* userThread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = userThread.hpp; sourceTree = "<group>"; };
+		F5B40DF42902C039008A6872 /* userThread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = userThread.hpp; sourceTree = "<group>"; };
+		F5B40DF52902C048008A6872 /* convThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = convThread.cpp; sourceTree = "<group>"; };
+		F5B40DF62902C048008A6872 /* convThread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = convThread.hpp; sourceTree = "<group>"; };
+		F5C215462902DF8100341588 /* mesgThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mesgThread.cpp; sourceTree = "<group>"; };
+		F5C215472902DF8100341588 /* mesgThread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesgThread.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				F5B40DEC2902A69C008A6872 /* userThread.cpp */,
-				F5B40DED2902A69C008A6872 /* userThread.hpp */,
+				F5B40DF42902C039008A6872 /* userThread.hpp */,
+				F5B40DF52902C048008A6872 /* convThread.cpp */,
+				F5B40DF62902C048008A6872 /* convThread.hpp */,
+				F5C215462902DF8100341588 /* mesgThread.cpp */,
+				F5C215472902DF8100341588 /* mesgThread.hpp */,
 			);
 			path = threads;
 			sourceTree = "<group>";
@@ -216,8 +226,10 @@
 				F5B40DEE2902A69C008A6872 /* userThread.cpp in Sources */,
 				F5B40DDD2901EA07008A6872 /* socket.c in Sources */,
 				F5B40DE12901F901008A6872 /* acceptConnection.c in Sources */,
+				F5C215482902DF8100341588 /* mesgThread.cpp in Sources */,
 				F5B40DEB2902A5FA008A6872 /* server.cpp in Sources */,
 				F5B40DEA2902A5FA008A6872 /* main.cpp in Sources */,
+				F5B40DF72902C048008A6872 /* convThread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

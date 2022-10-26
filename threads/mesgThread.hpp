@@ -1,16 +1,9 @@
-#ifndef userThread_hpp
-#define userThread_hpp
+#ifndef mesgThread_hpp
+#define mesgThread_hpp
 
-struct Server;
-struct Mesg;
-
-struct User {
-    Server *server;
-    Mesg *mesg;
-    
-    int userID;
-    int client_fd;
+struct Mesg {
     char *username;
+    char message[2028];
     
     struct {
         pthread_t threadID;
@@ -22,4 +15,4 @@ struct User {
     int startThread(void *arg);
 };
 
-#endif /* userThread_hpp */
+#endif /* mesgThread_hpp */

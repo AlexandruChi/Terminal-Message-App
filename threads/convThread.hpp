@@ -1,16 +1,13 @@
-#ifndef userThread_hpp
-#define userThread_hpp
+#ifndef convThread_hpp
+#define convThread_hpp
 
 struct Server;
-struct Mesg;
+struct User;
 
-struct User {
+struct Conv{
     Server *server;
-    Mesg *mesg;
     
-    int userID;
-    int client_fd;
-    char *username;
+    bool shouldRun;
     
     struct {
         pthread_t threadID;
@@ -22,4 +19,4 @@ struct User {
     int startThread(void *arg);
 };
 
-#endif /* userThread_hpp */
+#endif /* convThread_hpp */

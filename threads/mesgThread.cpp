@@ -1,12 +1,10 @@
 #include <pthread.h>
-#include <netinet/in.h>
 
-#include "userThread.hpp"
-#include "../server/server.hpp"
+#include "mesgThread.hpp"
 
-void *__userThread(void *arg);
+void *__mesgThread(void *arg);
 
-int User::startThread(void *arg) {
+int Mesg::startThread(void *arg) {
     pthread_attr_t attr;
     
     if (pthread_attr_init(&attr)) {
@@ -15,7 +13,7 @@ int User::startThread(void *arg) {
     
     pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
     
-    pthread_create(&thread.threadID, &attr, &__userThread, arg);
+    pthread_create(&thread.threadID, &attr, &__mesgThread, arg);
     
     if (pthread_attr_destroy(&attr)) {
         return 2;
@@ -24,7 +22,8 @@ int User::startThread(void *arg) {
     return 0;
 }
 
-void *__userThread(void *arg) {
+void *__mesgThread(void *arg) {
+    
     
     return 0;
 }

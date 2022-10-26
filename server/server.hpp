@@ -5,13 +5,13 @@ struct Server {
     int port;
     int server_fd;
     
-    unsigned int nrUsers;
-    
-    struct sockaddr_in serverAddress;
-    struct sockaddr_in clientAddress;
+    sockaddr_in serverAddress;
+    sockaddr_in clientAddress;
     
     int createSocket();
-    int acceptConnection(int *client_fd, sockaddr *clientAddress);
+    int acceptConnection(int *client_fd, sockaddr_in *clientAddress);
+    
+    
 };
 
 #endif /* server_hpp */
